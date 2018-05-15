@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  aspnetcoretest:
+    image: ${DOCKER_REGISTRY}aspnetcoretest
+    build:
+      context: .
+      dockerfile: AspNetCoreTest\Dockerfile
